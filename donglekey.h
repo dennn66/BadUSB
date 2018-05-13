@@ -3,6 +3,9 @@
 
 #include <QObject>
 
+
+namespace BadUSB {
+
 class DongleKey : public QObject
 {
     Q_OBJECT
@@ -55,5 +58,5 @@ signals:
 
 public slots:
 };
-
+}
 #endif // DONGLEKEY_H

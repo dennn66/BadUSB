@@ -2,7 +2,7 @@
 #define DONGLE_H
 
 #include <windows.h>
-#include <hidapi.h>
+#include "lib/hid/hidapi.h"
 #include <stdio.h>
 #include <wchar.h>
 #include <string.h>
@@ -78,6 +78,8 @@
 #define USB_MOUSE_BTN_4th       3
 #define USB_MOUSE_BTN_5th       4
 
+namespace BadUSB {
+
 class Dongle : public QObject
 {
     Q_OBJECT
@@ -145,5 +147,7 @@ signals:
 
 
 };
+
+}
 
 #endif // DONGLE_H

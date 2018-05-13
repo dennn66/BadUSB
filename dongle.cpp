@@ -1,6 +1,6 @@
 #include "dongle.h"
 
-
+using namespace BadUSB;
 
 Dongle::Dongle(QObject *parent) : QObject(parent)
 {
